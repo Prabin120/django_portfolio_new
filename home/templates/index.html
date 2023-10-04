@@ -1,0 +1,616 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8d9df9fbf7.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top nav-first py-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link mx-4 act" href="#home">HOME</a>
+                        <a class="nav-link mx-4" href="#about">ABOUT</a>
+                        <a class="nav-link mx-4" href="#work">WORK</a>
+                        <a class="nav-link mx-4" href="#skill">SKILL</a>
+                        <a class="nav-link mx-4" href="#contact">CONTACT</a>
+                        <!-- <a class="nav-link mx-4" href="https://drive.google.com/file/d/1gGO0QyJ3Vt98atMtGdVWfN2Djoz2uH-g/view?usp=sharing">RESUME</a> -->
+                        <a class="nav-link mx-4" href="https://drive.google.com/uc?export=download&id=1gGO0QyJ3Vt98atMtGdVWfN2Djoz2uH-g">RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="left">
+            <span>P</span>
+            <span>R</span>
+            <span>A</span>
+            <span>B</span>
+            <span>I</span>
+            <span>N</span>
+        </div>
+
+        <div class="right">
+            <a href="https://www.linkedin.com/in/prabin-sharma-b67a38206/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Prabin120" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:prabinsharma120@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/prabin4559/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+
+        <!-- <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <a class="nav-link mx-4 act" href="#home">HOME</a>
+                    <a class="nav-link mx-4" href="#about">ABOUT</a>
+                    <a class="nav-link mx-4" href="#work">WORK</a>
+                    <a class="nav-link mx-4" href="#skill">SKILL</a>
+                    <a class="nav-link mx-4" href="#contact">CONTACT</a>
+                    <a class="nav-link mx-4" href="#">RESUME</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav> -->
+    </header>
+    <section id="home" class="d-flex justify-content-center align-items-center">
+        <div class="images">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/image1.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/image3.JPG' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <h3 class="text-center intro">Hello, I am</h3>
+            <h2 class="text-center name">Prabin Sharma</h2>
+            <h4 class="text-center devel mt-4">I am a <span class="auto-typed"></span></h4>
+            <div class="hire-me text-center mt-5"><a href="#contact">Hire Me...</a></div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container pt-5">
+            <h1 class="title text-center my-5">ABOUT <span>ME</span></h1>
+            <div class="about d-flex align-items-center justify-content-center ">
+                <div class="container mt-3 about-mobile bg-light">
+                    <div class="row w-100">
+                        <div class="col-md-6">
+                            <table class="table table-bordered justify-content-center align-items-center">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center" scope="row"><button class="py-2 px-5" id="objective-button"
+                                                onclick="changeAbout('objective')">OBJECTIVE <i
+                                                    class="fa-solid fa-arrow-right fa-shake"></i></button></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row"><button class="py-2 px-5" id="personal-button"
+                                                onclick="changeAbout('personal')">PERSONAL</button></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row"><button class="py-2 px-5" id="education-button"
+                                                onclick="changeAbout('education')">EDUCATION</button></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="container about-detail p-3 m-3">
+                                <div id="objective">
+                                    <p>
+                                        &emsp; &emsp; To secure a rewarding position as a Python Developer in an innovative organization where I can leverage my expertise in Python, Django, and related technologies to contribute to the growth and success of the company. With a strong foundation in full-stack development and a passion for problem-solving, I am dedicated to building robust applications that enhance user engagement, improve functionality, and drive business results. My objective is to continuously expand my skills and knowledge while delivering high-quality solutions that meet the organization's objectives.
+                                    </p>
+                                </div>
+                                <div class="d-none" id="personal">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Name</th>
+                                                <td>:</td>
+                                                <td>Prabin Sharma</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">DOB</th>
+                                                <td>:</td>
+                                                <td>15 Jan 1999</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Nationality</th>
+                                                <td>:</td>
+                                                <td>India</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Address</th>
+                                                <td>:</td>
+                                                <td>Bangalore, Karnataka (560068)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-none" id="education">
+                                    <h4>MCA</h4>
+                                    <ul>
+                                        <li>from St. Anthony's College, Shillong, India</li>
+                                        <li>CGPA - 9.20</li>
+                                        <li>Period: 11/2020 - 07/2022</li>
+                                    </ul>
+                                    <h4>BSc. in Mathematics</h4>
+                                    <ul>
+                                        <li>from Gauhati University, Guwahati, India</li>
+                                        <li>CGPA - 6.99</li>
+                                        <li>Period: 08/2017 - 11/2020</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="work">
+        <div class="container pt-5 pb-4">
+            <h1 class="title text-center my-5">WORK <span>DETAIL</span></h1>
+            <p class="text-center text-light mid-text">Industrial Experience</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Python/Django Developer</p>
+                        <p class="company">at <span>Roboprenr</span></p>
+                        <p class="detail">
+                            <li>
+                                Working as a Fullstack developer to add new features and functionality to the website.
+                            </li>
+                            <li>
+                                Leading a team to build and implement significant projects like a coding platform for coding
+competitions, and a news feed feature to showcase the user's projects. Which increases user
+engagement.
+                            </li>
+                            <li>
+                                Built and integrated many functionalities like invoice and certificate generators, and discount
+coupon systems, and made unique profile URLs so that any other user can see other users’
+profiles.
+                            </li>
+                            <li>
+                                Used Python, Django, and other relevant technologies to develop, maintain, and improve the
+application's backend and database systems, as well as JavaScript, Bootstrap, HTML, CSS,
+Ajax, and jQuery for the front end.
+                            </li>
+                        </p>
+                        <!-- <p class="link mt-3"><a href="#">Github</a></p> -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Oct 10, 2022 - Jan 10, 2023</p>
+                        <p class="role">Data Scientist, Intern</p>
+                        <p class="company">at <span>Technocolabs Softwares</span></p>
+                        <p class="detail">
+                            <li>
+                                Conducted credit risk analysis for Bondora Bank, utilizing various statistical techniques for data pre-processing and model deployment.
+                            </li>
+                            <li>
+                                Implemented machine learning models to predict the credit risk of loan applicants and improve overall lending decisions.
+                            </li>
+                            <li>
+                                Contributed to developing and implementing an automated credit risk assessment system, resulting in improved loan portfolio performance.
+                            </li>
+                        </p>
+                        <p class="link mt-3"><a href="https://github.com/Technocolabs100/Borrowers-Credit-risk-modelling-of-leading-European-P2P-lending-platform-Bondora">Github</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Mar 01, 2022 - Aug 02, 2022</p>
+                        <p class="role">Data Science, Intern</p>
+                        <p class="company">at <span>National Informatics Centre, Shillong</span></p>
+                        <p class="detail">
+                            <li>
+                                Analyzed the given data (i.e., the expenditure of the Meghalaya state Government) using Data Science libraries of Python Language like Pandas, Matplotlib, NumPy, etc. to meet the requirements.
+                            </li>
+                            <li>
+                                Developed a website using HTML, CSS, Bootstrap, and Django and implemented the outcome algorithm. Which helps them to work in a very efficient way.
+                            </li>
+                        </p>
+                        <!-- <p class="link mt-3"><a href="#">Github</a></p> -->
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer2</p>
+                        <p class="company">at <span>National Informatics Centre, Shillong</span></p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur
+                            accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi
+                            fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div> -->
+            </div>
+            <p class="text-center text-light mt-5 mid-text">Personal Projects</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Mar 10, 2023</p>
+                        <p class="role">codeEditor</p>
+                        <p class="company"><span>Designed and Build Code Editor for many languages</span></p>
+                        <p class="detail">
+                            <li>
+                                Have built the front-end using HTML, Bootstrap, CSS, JavaScript, and Ajax, where users can give inputs, feedback, can use shortcuts, and can change themes.
+                            </li>
+                            <li>
+                                The back end is being built using Django. Python sub-process is used for compilation. Users can write and run codes in C, C++, Python, JAVA, and JavaScript.
+                            </li>
+                        </p>
+                        <p class="link mt-3"><a href="https://github.com/Prabin120/codeEditor2">Github</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Jul 10, 2023</p>
+                        <p class="role">Personal Portfolio</p>
+                        <p class="company"><span>Designed using HTML, CSS, JS, Bootstrap</span></p>
+                        <p class="detail">
+                            <li>
+                                You can see all the features and Design. 
+                            </li>
+                        </p>
+                        <p class="link mt-3"><a href="https://github.com/Prabin120/portfolio">Github</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skill">
+        <div class="container pt-5">
+            <h1 class="title text-center my-5">SKILL <span>SET</span></h1>
+            <p class="text-center text-light mid-text">Programming langauges</p>
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/python.png' %}" alt=""> Python
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/c++.png' %}" alt=""> C++
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/js.png' %}" alt=""> JavaScript
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-light mid-text mt-5">Frameworks</p>
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/django.png' %}" alt="">
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/drf.png' %}" alt="">
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/bootstrap.png' %}" alt="">
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/jquery.png' %}" alt="">
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-light mid-text mt-5">Others</p>
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/git.png' %}" alt="">
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/pgsql.jpeg' %}" alt="">
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/data-analysis.png' %}" alt=""> Data Analysis
+                        </p>
+                        <div class="rate d-flex justify-content-around align-items-center">
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="fill-skill"></div>
+                            <div class="unfill-skill"></div>
+                            <div class="unfill-skill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-light mid-text mt-5">Soft Skills</p>
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-md-3">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/emotional-intelligence.png' %}" alt=""> Quick Learner
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/adapt.png' %}" alt=""> Adaptive Nature
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/positive.png' %}" alt=""> Positive Attitude
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <p class="text-center skill-name">
+                            <img src="{% static 'images/problem-solving.png' %}" alt=""> Problem Solving
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+    </section>
+
+    <section id="contact">
+        <div class="container pt-5">
+            <h1 class="title text-center my-5">CONTACT <span>ME</span></h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="mid-text text-center mb-5">Leave a Message</p>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Your Name" name="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write some message" name="message"></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="mid-text text-center mb-5">Contact Info</p>
+                        <p class="contact-first"><i class="fa-solid fa-envelope"></i> Email</p>
+                        <p class="contact-second">prabinsharma120@gmail.com</p>
+                        <p class="contact-first"><i class="fa-solid fa-phone"></i> Phone</p>
+                        <p class="contact-second">+919365727136</p>
+                        <p class="contact-first"><i class="fa-solid fa-location-dot"></i> Address</p>
+                        <p class="contact-second">Sector 7, HSR</p>
+                        <p class="contact-second">Bangalore, Karnataka</p>
+                        <p class="contact-second">India, 560068</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container p-5">
+            <p class="text-center">Copyright © 2023 All rights reserved</p>
+            <p class="text-center">Made with ❤️ by <span>Prabin</span></p>
+            <div class="emoji text-center">
+                <a href="https://www.linkedin.com/in/prabin-sharma-b67a38206/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Prabin120" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:prabinsharma120@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/prabin4559/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-typed",{
+            strings : ["Python Developer", "Software Developer","Backend Developer","Frontend Developer","Programmer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            looped : true
+
+        })
+    </script>
+    <script>
+        let targetOffset = $("#about").offset().top;
+
+        var $w = $(window).scroll(function () {
+            if ($w.scrollTop() >= targetOffset) {
+                $("nav").addClass("bg-body-tertiary")
+                $("nav").removeClass("nav-first")
+                $("nav i").css("color","rgb(50, 55, 55)")
+            }
+            else {
+                $("nav").removeClass("bg-body-tertiary")
+                $("nav").addClass("nav-first")
+                $("nav i").css("color","aliceblue")
+            }
+        })
+
+        function changeAbout(obj) {
+            let a = ['objective', 'personal', 'education'];
+            a.forEach(element => {
+                if (obj != element) {
+                    $("#" + element).addClass("d-none");
+                    $("#" + element + "-button").removeClass("about-selected m-2");
+                    $("#" + element + "-button").html(element.toUpperCase());
+                }
+            });
+            $("#" + obj).removeClass("d-none");
+            $("#" + obj + "-button").html(obj.toUpperCase() + " " + '<i class="fa-solid fa-arrow-right fa-shake"></i>');
+            $("#" + obj + "-button").addClass("about-selected m-2");
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav a');
+
+            let currentSection = '';
+
+            sections.forEach(function (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(function (link) {
+                link.classList.remove('act');
+
+                if (link.getAttribute('href').substring(1) === currentSection) {
+                    link.classList.add('act');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
